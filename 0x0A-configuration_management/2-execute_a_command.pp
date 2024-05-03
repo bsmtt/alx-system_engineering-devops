@@ -1,6 +1,6 @@
 # kill a process named killmenow
 
 exec { 'pkill killmenow' :
-    provider => 'shell',
+    path => '/bin/',
     command => 'pkill killmenow',
 }
